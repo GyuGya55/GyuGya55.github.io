@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+/*========================================= BODY =========================================*/
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #303030;
+    font-family: 'Black Ops One', cursive;
+}
+
+/*======================================== HEADER ========================================*/
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #202020;
+}
+
+header h1 {
+    margin: 0 0 0 60px;
+    padding: 0;
+}
+
+header img {
+    position: absolute;
+}
+
+header p {
+    margin: 0;
+    padding: 0;
+}
+
+header div {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: auto;
+    height: 60px;
+}
+
+#logout {
+    top: 0;
+    right: 10px;
+}
+
+#settings {
+    top: 0;
+    right: 70px;
+}
+
+
+header div h2 {
+    text-align: right;
+    margin-right: 130px;
+}
+
+header #profpic {
+    width: 50px;
+    height: 50px;
+    left: -60px;
+    top: 0;
+}
+
+/*======================================== LOGIN =========================================*/
+#errordiv {
+    display: block;
+    margin: 10px auto 10px auto;
+    border: red solid 5px;
+    color: red;
+    width: 30%;
+}
+
+.center {
+    text-align: center;
+}
+
+.data {
+    display: block;
+    margin: 10px auto 10px auto;
+    border: #202020 solid 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.data input[type="text"], .data input[type="password"] {
+    display: block;
+    margin: auto auto 10px auto;
+    background-color: #303030;
+    color: white;
+}
+
+.data button, .delIssue, #publish, .delToDo {
+    background-color: #202020;
+    border: none;
+    font-size: 1.5em;
+    width: 50%;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    margin: 10px;
+}
+
+
+/*========================================= NAV ==========================================*/
+nav>ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 20%;
+}
+
+nav li a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+li a:hover{
+    background-color: #303030;
+}
+
+a.active{
+    background-color: #303030;
+}
+
+/*======================================= PROFILES ========================================*/
+
+main {
+    min-height: 75vh;
+}
+
+aside {
+    width: 20%;
+    overflow: auto;
+    position: absolute;
+    height: 60vh;
+}
+
+#prof {
+    width: 75%;
+    margin-left: 25%;
+}
+
+#prof>img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+#prof button, .deleteLink, .completeToDo {
+    background-color: #303030;
+    border: none;
+}
+
+
+.minipic {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.pushed {
+    margin-left: 85px;
+}
+
+
+/*========================================= LINK =========================================*/
+.link {
+    position: relative;
+    display: inline-block;
+    width: 28%;
+    margin: 1%;
+    height: 90px;
+    padding: 0 1%;
+}
+
+
+.link a {
+    position: relative;
+    top: -50%;
+    margin: auto;
+}
+
+#addlink, #addBug, #addToDo {
+    background-color: #202020;
+    border: none;
+    font-size: 1.5em;
+    width: 50%;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+#wideData {
+    width: 70%;
+}
+
+#wideData input[type="text"]{
+    width: 80%;
+}
+
+.deleteLink {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+
+
+/*========================================= BUGS =========================================*/
+[type=radio], [type='checkbox'] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+[type=radio] + img, [type='checkbox'] + img {
+    cursor: pointer;
+}
+
+[type='checkbox'] + img {
+    height: 80px;
+    width: 80px;
+    border: 10px solid #303030;
+}
+  
+
+[type=radio]:checked + img {
+    background-color: #202020;
+}
+
+[type='checkbox']:checked + img {
+    height: 90px;
+    width: 90px;
+    border: 5px solid white;
+}
+
+#wideData label {
+    position: relative;
+    margin: 0 20px;
+}
+
+#wideData img {
+    margin-bottom: 30px;
+}
+
+#wideData span{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.bug {
+    display: block;
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.bug img {
+    position: absolute;
+}
+
+.bug h2, .bug p {
+    position: relative;
+    left: 110px;
+}
+
+.bug p {
+    overflow: hidden;
+    width: 80%;
+    height: 20px;
+}
+
+#categoryIcon {
+    display: block;
+    margin: auto;
+}
+
+.delIssue, #publish, #addToDo, .delToDo {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/*======================================== IDEAS =========================================*/
+
+#newIdea {
+    display: block;
+    width: 50%;
+    margin: auto;
+    background-color: #ffff66;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+}
+
+.idea {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #202020;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.idea img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.ideaNote {
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    margin: 0;
+    padding: 5px;
+    background-color: #ffff66;
+    color: black;
+    min-height: 100px;
+}
+
+.ideaHeader {
+    display: table-cell;
+    position: relative;
+    left: 60px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.ideaFooter {
+    font-size: 1em;
+    margin: 0;
+    padding: 5px;
+}
+
+.updateIdea {
+    background-color: #202020;
+    position: absolute;
+    bottom: 26px;
+    right: 26px;
+    border: none;
+}
+
+.updateIdea img {
+    width: 25px;
+    height: 25px;
+}
+
+/*========================================= TODO =========================================*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 44px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.todo {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.todo span {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    font-size: 1.5em;
+}
+
+
+.deadline {
+    position: relative;
+    right: 5px;
+    text-align: right;
+    margin: 0;
+}
+
+.edit {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+
+.completeToDo {
+    position: absolute;
+    left: -42px;
+    top: -10px;
+}
+
+.tododescr {
+    position: relative;
+    left: 42px;
+    width: 90%;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+.soloToDo {
+    padding-right: 10px;
+    vertical-align: top;
+    border-right: 2px solid white;
+}
+
+.multiToDo {
+    padding-left: 6px;
+    vertical-align: top;
+    width: 50%;
+    border-left: 2px solid white;
+}
+
+.targetMarker {
+    height: 10px;
+}
+
+/*======================================== FOOTER ========================================*/
+footer {
+    text-align: right;
+}
+
+
+/*======================================== DESIGN ========================================*/
+textarea, option, select {
+    background-color: #303030;
+    color: white;
+}
+
